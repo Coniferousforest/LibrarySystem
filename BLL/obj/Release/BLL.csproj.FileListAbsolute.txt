@@ -1,0 +1,11 @@
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\BLL.dll
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\BLL.pdb
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\DAL.dll
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\Model.dll
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\DAL.pdb
+E:\ResearchTraining\LibrarySystem\BLL\bin\Release\Model.pdb
+E:\ResearchTraining\LibrarySystem\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+E:\ResearchTraining\LibrarySystem\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+E:\ResearchTraining\LibrarySystem\BLL\obj\Release\BLL.csproj.CopyComplete
+E:\ResearchTraining\LibrarySystem\BLL\obj\Release\BLL.dll
+E:\ResearchTraining\LibrarySystem\BLL\obj\Release\BLL.pdb

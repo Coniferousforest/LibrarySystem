@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no" name="viewport" />
+	<title>图书馆综合管理系统</title>
+	
+    <script type="text/javascript">document.write('<link rel="stylesheet" type="text/css" href="css/style.css?timestamp='+new Date().getTime()+'" >');</script>
+	<script type="text/javascript">document.write('<link rel="stylesheet" type="text/css" href="css/main.css?timestamp='+new Date().getTime()+'" >');</script>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+	
+	<!-- 顶部导航 -->
+    <form runat="server">
+		<div class="clearfix">
+			<div class="topNavigation" >
+				<!-- 顶部菜单栏 -->
+				<div class="topMenu">
+					<div class="welcomeText">
+						幼儿图书馆欢迎您
+					</div>
+			
+					<ul class="clearfix bar">
+						<li>
+							<a href="index.aspx"><h2>首页</h2></a>
+						</li>
+						<li>
+								<a href="book.aspx"><h2>精品图书</h2></a>
+						</li>
+						<li>
+							<a href="news.aspx"><h2>新闻资讯</h2></a>
+						</li>
+						<li>
+							<a href="about.aspx"><h2>关于我们</h2></a>
+						</li>
+					</ul>
+		
+
+					<asp:Panel ID="Panel1" runat="server" class="userInfo">
+						请
+						 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" class="loginUser">登录</asp:LinkButton>
+					</asp:Panel>
+					<asp:Panel ID="Panel2" runat="server" class="userInfo" Visible="false">
+                			欢迎
+						&nbsp
+						<asp:HyperLink ID="HyperLink1" runat="server">请刷新</asp:HyperLink>
+						<asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" class="loginUser">退出</asp:LinkButton>
+					</asp:Panel>
+				</div>
+			</div>
+	</div>
+
+	<div style="height:100px;"></div>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer">
+		<div class="footerContent">
+			联系电话：000-11111111
+			<br/>
+			版权所有@南京理工大学2018级幼儿图书管理设计小组 免责声明
+			
+		</div>
+	</div>
+    </form>
+</body>
+</html>

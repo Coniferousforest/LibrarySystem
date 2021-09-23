@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Administrator_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+   <script type="text/javascript">document.write('<link rel="stylesheet" type="text/css" href="css/style.css?timestamp='+new Date().getTime()+'" >');</script>
+	<script type="text/javascript">document.write('<link rel="stylesheet" type="text/css" href="css/menu.css?timestamp='+new Date().getTime()+'" >');</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height:100%;">
+	 <form id="form1" runat="server" style="height:100%;">
+        <!--主页部分 -->
+	<!-- 顶部菜单 -->
+	
+	<div class="top">
+			<div class="topMenu">
+			<div class="welcomeText">
+				欢迎使用大学图书馆综合管理系统!
+			</div>
+            <asp:Panel ID="Panel1" runat="server" class="userInfo">
+                请
+                 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">登录</asp:LinkButton>
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" class="userInfo" Visible="false">
+                	欢迎
+				&nbsp
+                <asp:HyperLink ID="HyperLink1" runat="server">请刷新</asp:HyperLink>
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">退出</asp:LinkButton>
+            </asp:Panel>
+			
+		    
+			
+		</div>
+		
+		<!-- 顶图 -->
+
+	</div>
+
+	<!-- 左侧导航栏引自https://blog.csdn.net/qq_38622264/article/details/81289899  -->
+		<div class="nav" >
+			<div class="nav-top">
+			<div id="mini" style=" margin: 10px;  border-bottom:1px solid rgba(255,255,255,.1)"><img src="../img/menu.svg" ></div>
+			</div>
+			<ul id="aat">
+			</ul>
+
+		</div>
+		<div >
+	    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        </asp:ContentPlaceHolder>
+		</div>
+		
+			
+		
+		<!-- <div style="text-align:center;margin:-200px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+			<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+			<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+		</div> -->
+        
+
+    </form>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/wangEditor.js"></script>
+	<script type="text/javascript" src="../js/menu.js"></script>
+    <script>
+
+	$(function(){
+
+		var navList = [
+		  {
+		    "p" : "图书管理",
+            "c": ["图书上新", "修改图书信息","还书管理"],
+            "a" : ["../Book/add.aspx","../Book/boodetail.aspx","../Book/borowbook.aspx"]
+		  },
+		  {
+              "p": "文章管理",
+              "c": ["新建文章", "管理文章"],
+              "a": ["../News/add.aspx", "../News/newsdetail.aspx"]
+
+		  },
+		  {
+		    "p" : "用户管理",
+              "c": ["新建用户", "修改用户信息"],
+            "a": ["../user/add.aspx", "../user/update.aspx"]
+		  },
+		  {
+		    "p" : "轮播图管理",
+              "c": ["新建轮播图","轮播图管理"],
+            "a": ["../photo/add.aspx", "../photo/newsdetail.aspx"]
+		  }
+		]
+		var navData = '';
+		for(let i=0;i<navList.length;i++){
+			navData+= "<li class='nav-item'><a href='javascript:;'><i class='my-icon nav-icon icon_1'></i><span>"+navList[i].p+"</span><i class='my-icon nav-more'></i></a><ul>"
+            for (let w = 0; w < navList[i].c.length; w++){
+                navData += "<li><a href='" + navList[i].a[w] + "'><span>" + navList[i].c[w] + "</span></a></li>"
+			}
+			navData+="</ul></li>"
+		}
+		console.log(navData)
+		$('#aat').html(navData)
+
+	})
+
+
+</script>
+</body>
+</html>

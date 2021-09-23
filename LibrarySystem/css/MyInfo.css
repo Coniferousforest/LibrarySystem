@@ -1,0 +1,250 @@
+@font-face {
+    /* 指定字体的名字 */
+    font-family: 'myinfo1';
+    /* 服务器中字体的路径 */
+    src: url('/font/ZCOOLXiaoWei-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    /* 指定字体的名字 */
+    font-family: 'myinfo2';
+    /* 服务器中字体的路径 */
+    src: url('/font/ZCOOLKuaiLe-Regular.ttf') format("truetype");
+}
+@font-face {
+    /* 指定字体的名字 */
+    font-family: 'myinfo3';
+    /* 服务器中字体的路径 */
+    src: url('/font/ZCOOLQingKeHuangYou-Regular.ttf') format("truetype");
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.topBar_My{
+    width:1200px;
+    margin:0 auto;
+}
+
+.nav {
+    width: 1200px;
+    height: 70px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+    .nav li {
+        float: left;
+        width: 400px;
+        height: 70px;
+
+        background-color: #f4f4f4;
+
+        list-style: none;
+        font-size: 32px;
+        font-family: myinfo3;
+        letter-spacing: 3pt;
+        color: #666;
+        line-height: 70px;
+    }
+    .nav li:hover{
+        background-color:#ecebeb;
+    }
+
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position:relative;
+    /*background-color:rgb(245,245,245);*/
+}
+
+.list{
+    z-index:1;
+}
+
+.listMy{
+    width:800px;
+    height:400px;
+    margin:0 auto;
+    background-color:white;
+    border: 1px solid #ccc;
+}
+
+.MyInfoTop {
+    width: 800px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    font-family: myinfo2;
+    letter-spacing: 2pt;
+    border-bottom: 1px #ccc solid;
+}
+.MyInfoInner {
+    width: 800px;
+    margin: 0 auto;
+    /* border-spacing : 指定边框之间的距离 */
+    border-spacing: 0px;
+    /* border-collapse: 设置边框的合并 */
+    text-align: left;
+}
+    .MyInfoInner tr {
+        width: 800px;
+        height: 60px;
+        margin:0 auto;
+    }
+        .MyInfoInner tr td {
+            height: 60px;
+            font-size: 16px;
+            line-height: 50px;
+            color: rgb(60,64,67);
+            border-bottom: 1px #ccc solid;
+        }
+
+        .MyInfoInner tr .titleFF{
+            border:none;
+            width:30px;
+        }
+        .MyInfoInner tr .titleF {
+            width: 100px;
+            padding-left:16px;
+            font-family:myinfo2;
+            font-size: 22px;
+        }
+        .MyInfoInner tr .titleN{
+            font-size:18px;
+            font-family:myinfo1;
+
+        }
+        .MyinLine {
+            height: 1px;
+            width: 700px;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+
+
+.listBook {
+}
+
+
+table.booksState {
+    width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    /* border-spacing : 指定边框之间的距离 */
+    border-spacing: 0px;
+    /* border-collapse: 设置边框的合并 */
+    text-align: left;
+}
+.GridViewHeaderStyle {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(28,94,85);
+    text-align:center;
+}
+    .GridViewHeaderStyle th {
+        height: 60px;
+        font-size: 20px;
+        color: white;
+        border:none;
+    }
+
+.GridViewRowStyle {
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    background-color: #E3EAEB;
+}
+    .GridViewRowStyle td {
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+        color: rgb(60,64,67);
+        border:none;
+        border-bottom: 1px #ccc solid;
+    }
+
+
+.listPsw {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+.pswTop {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 1px solid white;
+}
+    .pswTop .pswHead tr {
+        height: 70px;
+        font-size: 24px;
+        color: white;
+    }
+        .pswTop .pswHead tr th {
+            border-bottom: 1px solid white;
+        }
+
+    .pswTop .pswBody tr {
+        font-size: 20px;
+    }
+        .pswTop .pswBody tr .pswLeft {
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            border-left: none;
+            color:white;
+            font-weight:bold;
+            border-bottom: 1px solid white;
+        }
+        .pswTop .pswBody tr .pswR {
+            border-left: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+    .pswTop .pswBody tr .pswRight {
+        width: 300px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px white solid;
+        margin-left: 20px;
+    }
+.pswBtnTop {
+    text-align: center;
+}
+.pswBtn {
+    
+}
+.pswBtn {
+    width: 100px;
+    height: 60px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #fdd6bd;
+    border-radius: 10px;
+}
+    /*#74ebd5  #ffb199*/
+    .pswBtn:hover {
+        background-color: #fdd6bd;
+        color: white;
+    }
+

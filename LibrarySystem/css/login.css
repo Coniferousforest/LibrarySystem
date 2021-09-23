@@ -1,0 +1,54 @@
+.main{
+	width: 400px;
+	height: 700px;
+	text-align: center;
+	border-radius: 30px;
+	margin: 0px auto;
+	position: relative;
+}
+h1{
+	color: white;
+	
+}
+.content {
+	margin-top: 30px;
+	/*background-color: #ccc;*/
+	height: 400px;
+	z-index: 1;
+	position: relative;
+	padding: 1em;
+	max-width: 30em;
+	border-radius: 30px;
+	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+	.content::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		-webkit-filter: blur(20px);
+		filter: blur(20px);
+		background-color: rgba(35,116,166,.6);
+	}
+
+
+.menu {
+	width: 350px;
+	margin: 0 auto;
+	margin-top:16%;
+	height: 200px;
+	
+}
+.memu tr{
+	height: 50px;
+}
+.backImg {
+	position: fixed;
+	width: 100%;
+}
+
+

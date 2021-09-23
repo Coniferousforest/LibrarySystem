@@ -1,0 +1,214 @@
+
+@font-face {
+	/* 指定字体的名字 */
+	font-family: 'myfont1';
+	/* 服务器中字体的路径 */
+	src: url('/font/ZCOOLXiaoWei-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	/* 指定字体的名字 */
+	font-family: 'myfont2';
+	/* 服务器中字体的路径 */
+	src: url('/font/ZCOOLKuaiLe-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	/* 指定字体的名字 */
+	font-family: 'myfont3';
+	/* 服务器中字体的路径 */
+	src: url('/font/ZCOOLQingKeHuangYou-Regular.ttf') format("truetype");
+}
+
+/*导航入口精品图书 在线选座等*/
+.entance {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 150px;
+	/*background-color: yellow;*/
+}
+.entance-item{
+	float: left;
+	height: 150px;
+	width:50%;
+	font-size:26px;
+	color:black;
+	font-family: myfont3;
+	text-align: center;
+
+}
+.entance-item-content{
+	margin: 0px auto;
+	width: 200px;
+}
+.entance-item:hover {
+	background-color: #b1eeff;
+}
+.entance-item-content .img_three{
+	display:inline-block;
+	height:60px;
+	width:60px;
+}
+/*首页模块*/
+.bookContent {
+	width: 1200px;
+	margin-bottom: 40px;
+}
+
+.moduleTitle {
+	height: 60px;
+	width: 140px;
+	background-color: rgb(0,200,255);
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	
+}
+.line{
+	border:none;
+	height:1px;
+	width:1200px;
+	background-color:rgb(0,200,255);
+}
+
+.moduleTitle h2 {
+
+	text-align: center;
+	line-height: 60px;
+
+	font-size: 32px;
+	letter-spacing: 2pt;
+	font-family: myfont3;
+
+	color: white;
+}
+
+.bookItem { /*.bookItem*/
+
+	width: 237px;
+	float: left;
+
+	margin: 40px 0px;
+	margin-right:80px;
+
+	background-color: #fff;
+	position: relative;
+	border:none;
+	max-height: 335px;
+	min-height: 335px;
+	overflow: hidden;
+	perspective: 800px;
+}
+
+.bookName { /*.bookName*/
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #00b4e6;
+	font-size: 22px;
+	font-family: myfont2;
+}
+.nameLine {
+	width: 80px;
+	height: 1px;
+
+	margin-top:10px;
+	border: none;
+	background-color: black;
+}
+.imgContent { /*.imgContent*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transition: 0.4s;
+	z-index: 2;
+}
+.imgContent img { /*.imgContent img*/
+	max-width: 100%;
+	vertical-align: middle;
+	width: 100%;
+	transition: 0.4s;
+	height: 100%;
+}
+.bookItem:hover .imgContent { /*.bookItem .imgContent*/
+	transform: rotateX(84deg);
+	transform-origin: center bottom 0;
+	transition: 0.4s;
+}
+
+.textContent { /*.textContent*/
+	height: 300px;
+
+	overflow: hidden;
+	position: relative;
+
+	background-color: #fff;
+
+	margin-top: 15px;
+	font-size:15px;
+}
+.textBook { /*.textBook*/
+	display:inline-block;
+
+	font-size: 18px;
+
+	font-weight: 100;
+	line-height: 22px;
+
+	margin-bottom: 10px;
+	font-family:myfont1;
+	font-size:16px;
+}
+
+.bookTouch {
+	width: 100px;
+	height: 50px;
+	margin:0 auto;
+}
+	.bookTouch a { /*.bookTouch a*/
+
+		display: inline-block;
+		position: relative;
+		margin: 5px;
+		padding: 0 20px;
+		text-align: center;
+		text-decoration: none;
+		font: bold 12px/25px Arial, sans-serif;
+		text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+		-moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+		box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+		-webkit-transition: all 0.15s ease;
+		-moz-transition: all 0.15s ease;
+		-o-transition: all 0.15s ease;
+		transition: all 0.15s ease;
+	}
+.button:hover {
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+}
+
+.bookTouch a:active {
+	-webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+	-moz-box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+	box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+}
+
+.bookA {
+	color: #19667d;
+	background: #70c9e3; /* Old browsers */
+	background: -moz-linear-gradient(top, #70c9e3 0%, #39a0be 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c9e3), color-stop(100%,#39a0be)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #70c9e3 0%,#39a0be 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #70c9e3 0%,#39a0be 100%); /* Opera 11.10+ */
+	background: linear-gradient(top, #70c9e3 0%,#39a0be 100%); /* W3C */
+}
+.bookTouch a:hover { /*.bookTouch a:hover*/
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+}
+

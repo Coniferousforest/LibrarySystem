@@ -1,0 +1,6 @@
+E:\ResearchTraining\LibrarySystem\Model\bin\Release\Model.dll
+E:\ResearchTraining\LibrarySystem\Model\bin\Release\Model.pdb
+E:\ResearchTraining\LibrarySystem\Model\obj\Release\Model.csprojAssemblyReference.cache
+E:\ResearchTraining\LibrarySystem\Model\obj\Release\Model.csproj.CoreCompileInputs.cache
+E:\ResearchTraining\LibrarySystem\Model\obj\Release\Model.dll
+E:\ResearchTraining\LibrarySystem\Model\obj\Release\Model.pdb
